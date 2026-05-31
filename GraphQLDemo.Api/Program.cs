@@ -1,4 +1,7 @@
-using GraphQLDemo.Business.DataLoaders;
+using GraphQLDemo.Api.GraphQL;
+using GraphQLDemo.Business.DataLoaders.Customer;
+using GraphQLDemo.Business.DataLoaders.Item;
+using GraphQLDemo.Business.DataLoaders.Order;
 using GraphQLDemo.Business.Resolvers;
 
 namespace GraphQLDemo.Api

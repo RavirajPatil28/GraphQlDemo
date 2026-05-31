@@ -1,4 +1,4 @@
-﻿using GraphQLDemo.Data.Data;
+﻿using GraphQLDemo.MockData.Data;
 using GraphQLDemo.Data.Models;
 using HotChocolate;
 using HotChocolate.Types;

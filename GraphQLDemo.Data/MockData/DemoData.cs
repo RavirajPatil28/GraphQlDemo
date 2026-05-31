@@ -1,6 +1,6 @@
 ﻿using GraphQLDemo.Data.Models;
 
-namespace GraphQLDemo.Data.Data
+namespace GraphQLDemo.MockData.Data
 {
     public static class DemoData
     {

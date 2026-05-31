@@ -1,8 +1,9 @@
-﻿using GraphQLDemo.Business.DataLoaders;
-using GraphQLDemo.Data.Data;
+﻿using GraphQLDemo.MockData.Data;
 using GraphQLDemo.Data.Models;
 using HotChocolate;
 using HotChocolate.Types;
+using GraphQLDemo.Business.DataLoaders.Item;
+using GraphQLDemo.Business.DataLoaders.Order;
 
 namespace GraphQLDemo.Business.Resolvers
 {

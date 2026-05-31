@@ -1,8 +1,8 @@
-﻿using GraphQLDemo.Data.Data;
+﻿using GraphQLDemo.MockData.Data;
 using GraphQLDemo.Data.InputTypes;
 using GraphQLDemo.Data.Models;
 
-namespace GraphQLDemo.Api
+namespace GraphQLDemo.Api.GraphQL
 {
     public class Mutation
     {

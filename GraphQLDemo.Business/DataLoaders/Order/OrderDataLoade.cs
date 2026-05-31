@@ -1,10 +1,10 @@
-﻿using GraphQLDemo.Data.Data;
-using GraphQLDemo.Data.Models;
+﻿using GraphQLDemo.MockData.Data;
 using GreenDonut;
+using OrderModel = GraphQLDemo.Data.Models.Order;
 
-namespace GraphQLDemo.Business.DataLoaders
+namespace GraphQLDemo.Business.DataLoaders.Order
 {
-    public class OrderDataLoader : BatchDataLoader<int, Order>
+    public class OrderDataLoader : BatchDataLoader<int, OrderModel>
     {
         public OrderDataLoader(
             IBatchScheduler batchScheduler,
@@ -13,7 +13,7 @@ namespace GraphQLDemo.Business.DataLoaders
         {
         }
 
-        protected override Task<IReadOnlyDictionary<int, Order>> LoadBatchAsync(
+        protected override Task<IReadOnlyDictionary<int, OrderModel>> LoadBatchAsync(
             IReadOnlyList<int> keys,
             CancellationToken cancellationToken)
         {
@@ -23,7 +23,7 @@ namespace GraphQLDemo.Business.DataLoaders
                 .Where(o => keys.Contains(o.Id))
                 .ToDictionary(o => o.Id);
 
-            return Task.FromResult<IReadOnlyDictionary<int, Order>>(orders);
+            return Task.FromResult<IReadOnlyDictionary<int, OrderModel>>(orders);
         }
     }
 }
